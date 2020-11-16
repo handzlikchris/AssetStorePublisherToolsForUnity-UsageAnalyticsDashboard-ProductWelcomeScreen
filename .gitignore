@@ -340,3 +340,4 @@ ASALocalRun/
 healthchecksdb
 /Library
 /Temp
+/Assets/Editor/WelcomeScreen/Common

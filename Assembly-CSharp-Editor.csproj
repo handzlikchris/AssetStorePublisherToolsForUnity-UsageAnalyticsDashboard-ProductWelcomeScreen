@@ -63,7 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Editor\WelcomeScreen.cs" />
+    <Compile Include="Assets\Editor\ExampleWelcomeScreen.cs" />
     <Compile Include="Assets\Editor\WelcomeScreen\Common\GuiElements\ChangeMainViewButton.cs" />
     <Compile Include="Assets\Editor\WelcomeScreen\Common\GuiElements\ClickableElement.cs" />
     <Compile Include="Assets\Editor\WelcomeScreen\Common\GuiElements\GuiSection.cs" />
