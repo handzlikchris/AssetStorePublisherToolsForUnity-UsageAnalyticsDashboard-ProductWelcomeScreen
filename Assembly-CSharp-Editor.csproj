@@ -64,27 +64,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\ExampleWelcomeScreen.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\GuiElements\ChangeMainViewButton.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\GuiElements\ClickableElement.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\GuiElements\GuiSection.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\GuiElements\GuiSectionBase.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\GuiElements\LastUpdateButton.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\GuiElements\LaunchSceneButton.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\GuiElements\OpenUrlButton.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\GuiElements\OpenUrlLink.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\GuiElements\ScrollViewGuiSection.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\PreferenceDefinition\EnumProjectEditorPreferenceDefinition.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\PreferenceDefinition\HandleOnEditorPersistedValueChange.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\PreferenceDefinition\ProjectEditorPreferenceDefinitionBase.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\PreferenceDefinition\TextProjectEditorPreferenceDefinition.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\PreferenceDefinition\ToggleProjectEditorPreferenceDefinition.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\ProductPreferenceBase.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\ProductWelcomeScreenBase.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\Utilities\AssetPathResolver.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\Utilities\BackgroundTaskRunner.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\Utilities\HttpRequestManager.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\Utilities\LayoutHelper.cs" />
-    <Compile Include="Assets\Editor\WelcomeScreen\Common\WelcomeScreenInitializerBase.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\GuiElements\ChangeMainViewButton.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\GuiElements\ClickableElement.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\GuiElements\GuiSection.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\GuiElements\GuiSectionBase.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\GuiElements\LastUpdateButton.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\GuiElements\LaunchSceneButton.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\GuiElements\OpenUrlButton.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\GuiElements\OpenUrlLink.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\GuiElements\ScrollViewGuiSection.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\PreferenceDefinition\EnumProjectEditorPreferenceDefinition.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\PreferenceDefinition\HandleOnEditorPersistedValueChange.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\PreferenceDefinition\ProjectEditorPreferenceDefinitionBase.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\PreferenceDefinition\TextProjectEditorPreferenceDefinition.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\PreferenceDefinition\ToggleProjectEditorPreferenceDefinition.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\ProductPreferenceBase.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\ProductWelcomeScreenBase.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\Utilities\AssetPathResolver.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\Utilities\BackgroundTaskRunner.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\Utilities\HttpRequestManager.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\Utilities\LayoutHelper.cs" />
+    <Compile Include="Assets\Editor\WelcomeScreen\WelcomeScreenInitializerBase.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
