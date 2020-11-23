@@ -13,15 +13,20 @@ public class WelcomeScreen : ProductWelcomeScreenBase
 {
     #region CustomisablePerProduct
 
+    // Analytics
+    // To enable analytics please go to https://app.immersiveVRtools.com
+    // You can register there and get AnalyticsVerificationToken, website will also allow you to view data
+
     //General
     public static bool IsUsageAnalyticsAndCommunicationsEnabled = true;
-    public static readonly string ProjectId = "immersive-vr-mechanic-tools";
+    public static readonly string AnalyticsVerificationToken = "_ptAA"; //Only add if analytics enabled. Check website.
+    public const string ProjectId = "publisher-product-welcome-screen";
     public static string VersionId = "1.0";
     
-    public static string ProductName = "Immersive VR Mechanic Tools";
-    private const string StartWindowMenuItemPath = "Window/Immersive VR Mechanic Tools/Start Screen";
+    public static string ProductName = "Welcome Screen Example";
+    private const string StartWindowMenuItemPath = "Window/Welcome Screen Example/Start Screen";
     public static string[] ProductKeywords = new[] { "start", "vr", "tools" };
-    private static readonly string ProjectIconName = "ProductIcon64";
+    private static readonly string ProjectIconName = "ProductImage64";
 
     //Window Layout
     private static Vector2 _WindowSizePx = new Vector2(650, 500);
@@ -86,9 +91,9 @@ public class WelcomeScreen : ProductWelcomeScreenBase
 
     private static readonly GuiSection TopSection = new GuiSection("Support", new List<ClickableElement>
         {
-            new OpenUrlButton("Documentation", $"{RedirectBaseUrl}/documentation"),
-            new OpenUrlButton("Unity Forum", $"{RedirectBaseUrl}/unity-forum"),
-            new OpenUrlButton("Contact", $"{RedirectBaseUrl}/contact")
+            new OpenUrlButton("Documentation", $"{BaseUrl}/{WebSafeProjectId}/documentation"),
+            new OpenUrlButton("Unity Forum", $"{BaseUrl}/{WebSafeProjectId}/unity-forum"), //TODO: add link to forum
+            new OpenUrlButton("Contact", $"{BaseUrl}/{WebSafeProjectId}/#contact")
         }
     );
 
@@ -112,7 +117,7 @@ public class WelcomeScreen : ProductWelcomeScreenBase
         $"I'd be great help if you could spend few minutes to leave a review on:",
         new List<ClickableElement>
         {
-            new OpenUrlButton("  Unity Asset Store", $"{RedirectBaseUrl}/unity-asset-store"),
+            new OpenUrlButton("  Unity Asset Store", $"{BaseUrl}/unity-asset-store"), //TODO: add correct URL
         }
     );
 
@@ -133,13 +138,12 @@ public class WelcomeScreen : ProductWelcomeScreenBase
     //Following code is required, please do not remove or amend
     #region RequiredSetupCode
 
-    private static string WebSafeProjectId { get; } = Uri.EscapeDataString(ProjectId);
-    public static string BaseUrl = "https://immersivevrtools.com";
-    private static readonly string RedirectBaseUrl = $"{BaseUrl}/redirect/{WebSafeProjectId}";
+    private static string WebSafeProjectId => Uri.EscapeDataString(ProjectId);
+    public const string BaseUrl = "http://immersivevrtools-api.localhost"; //TODO: adjust after tests
     public static string GenerateGetUpdatesUrl(string userId, string versionId)
     {
         if (!IsUsageAnalyticsAndCommunicationsEnabled) return string.Empty;
-        return $"{BaseUrl}/updates/{WebSafeProjectId}/{userId}?CurrentVersion={versionId}";
+        return $"{BaseUrl}/updates/{AnalyticsVerificationToken}/{WebSafeProjectId}/{versionId}/{userId}";
     }
     private static int RightColumnWidth => (int)_WindowSizePx.x - LeftSections.First().WidthPx - 15;
     public override string WindowTitle { get; } = ProductName;
