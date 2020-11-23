@@ -19,10 +19,10 @@ public class WelcomeScreen : ProductWelcomeScreenBase
 
     //General
     public static bool IsUsageAnalyticsAndCommunicationsEnabled = true;
-    public static readonly string AnalyticsVerificationToken = "_ptAA"; //Only add if analytics enabled. Check website.
-    public const string ProjectId = "publisher-product-welcome-screen";
+    public static readonly string AnalyticsVerificationToken = ""; //Only add if analytics enabled. Check website.
+    public const string ProjectId = "";
     public static string VersionId = "1.0";
-    
+
     public static string ProductName = "Welcome Screen Example";
     private const string StartWindowMenuItemPath = "Window/Welcome Screen Example/Start Screen";
     public static string[] ProductKeywords = new[] { "start", "vr", "tools" };
@@ -31,7 +31,7 @@ public class WelcomeScreen : ProductWelcomeScreenBase
     //Window Layout
     private static Vector2 _WindowSizePx = new Vector2(650, 500);
     private static readonly int LeftColumnWidth = 175;
-    
+
     //Section Definitions
     private static readonly List<GuiSection> LeftSections = new List<GuiSection>() {
         new GuiSection("", new List<ClickableElement>
@@ -92,7 +92,7 @@ public class WelcomeScreen : ProductWelcomeScreenBase
     private static readonly GuiSection TopSection = new GuiSection("Support", new List<ClickableElement>
         {
             new OpenUrlButton("Documentation", $"{BaseUrl}/{WebSafeProjectId}/documentation"),
-            new OpenUrlButton("Unity Forum", $"{BaseUrl}/{WebSafeProjectId}/unity-forum"), //TODO: add link to forum
+            new OpenUrlButton("Unity Forum", $"{BaseUrl}/{WebSafeProjectId}/unity-forum"),
             new OpenUrlButton("Contact", $"{BaseUrl}/{WebSafeProjectId}/#contact")
         }
     );
@@ -117,7 +117,7 @@ public class WelcomeScreen : ProductWelcomeScreenBase
         $"I'd be great help if you could spend few minutes to leave a review on:",
         new List<ClickableElement>
         {
-            new OpenUrlButton("  Unity Asset Store", $"{BaseUrl}/unity-asset-store"), //TODO: add correct URL
+            new OpenUrlButton("  Unity Asset Store", $"{BaseUrl}/unity-asset-store"),
         }
     );
 
@@ -139,7 +139,7 @@ public class WelcomeScreen : ProductWelcomeScreenBase
     #region RequiredSetupCode
 
     private static string WebSafeProjectId => Uri.EscapeDataString(ProjectId);
-    public const string BaseUrl = "http://immersivevrtools-api.localhost"; //TODO: adjust after tests
+    public const string BaseUrl = "https://app.immersiveVRtools.com";
     public static string GenerateGetUpdatesUrl(string userId, string versionId)
     {
         if (!IsUsageAnalyticsAndCommunicationsEnabled) return string.Empty;
@@ -264,13 +264,13 @@ public class WelcomeScreenPreferences : ProductPreferenceBase
         EnableVrtkIntegrationPreferenceDefinition,
         ShaderModePreferenceDefinition
     };
-    
+
     #endregion
 
 
     #region RequiredSetupCode
     private static bool PrefsLoaded = false;
-    
+
 
 #if UNITY_2019_1_OR_NEWER
     [SettingsProvider]
