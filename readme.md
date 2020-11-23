@@ -1,4 +1,4 @@
-# Asset Publisher Tools for Unity
+# Asset Store Publisher Tools for Unity
 ![Features](github~/features-at-a-glance.jpg)
 
 
@@ -283,7 +283,7 @@ Once you're registered for analytics a new functionality is possible, you can no
 You'll also get a delivery receipt via website.
 
 ## Extending Code
-Code is sturctured in a easy to extend way.
+Code is sturctured in a easy to extend w ay.
 
 ### GUI Components
 GUI is composed automatically with specific types having different rendering and behaviour.
