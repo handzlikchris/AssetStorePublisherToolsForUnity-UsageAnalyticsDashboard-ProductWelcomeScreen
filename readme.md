@@ -312,6 +312,7 @@ Project preferences are rendered automatically using specified input type. Upon 
 > Additional base class implementation can be easily created to support more inputs.
 
 ### Roadmap
+- Link redirection (eg static link for support that'll be configured via web-application. This will also enable link click analytics)
 - 2 way communication 
     - eg. for support purposes
 - automatic GUI definition creation / adjustments
