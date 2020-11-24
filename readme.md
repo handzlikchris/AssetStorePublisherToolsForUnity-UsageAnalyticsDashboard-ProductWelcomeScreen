@@ -1,9 +1,9 @@
 # Asset Store Publisher Tools for Unity - Usage Analytics Dashboard / Product Welcome Screen
-![Features](github~/features-at-a-glance.jpg)
+[![Features Demo](github~/features-demo.gif)](https://youtu.be/3sUf7Qlx8gE)
 
 
 ## Asset Usage Analytics
-Have you ever wanted to understand the usage of your asset better? Stats like:
+Have you ever wanted to understand the usage of your Unity Asset better? Stats like:
 - how many different users?
 - how often it's being used?
 - how long specific user has been using it?
