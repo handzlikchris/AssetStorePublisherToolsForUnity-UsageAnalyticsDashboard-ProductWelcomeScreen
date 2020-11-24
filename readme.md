@@ -56,6 +56,10 @@ This tool will help you with getting there:
 > You can also compile code in to DLL as this contains base classes / common functionality, since this is asset that you distribute - I found it best to include as source code.
 2) Copy `ExampleWelcomeScreen.cs` file to your project (this includes screen customisable screen initialization code)
 3) Customisable parts, eg name, section, etc are in region `CustomisablePerProduct` in all 3 classes. Please adjust as needed (more options in later sections)
+    - to begin with analytics all you need to provide is:
+        - `AnalyticsVerificationToken` - generated via [web-application](https://app.immersiveVRtools.com/#/signup)
+        - `ProjectId` - unique ID (used for analytics and PerfSettings prefix) 
+*Use only letters(a-z) and dashes(-)*
 > Code in `RequiredSetupCode` regions is adding window / preferences to Unity Editor - it's best to left unchanged.
 4) Done - you'll now have functional and professionally looking welcome screen that'll add analytics and communication ability to your asset/
 
@@ -64,7 +68,7 @@ Basic project information as well as content definitions can be found here (regi
 
 #### General
 - `IsUsageAnalyticsAndCommunicationsEnabled` - this will enable usage analytics and 
-- `AnalyticsVerificationToken` - this is token available from the website (https://app.immersiveVRtools.com/#/signup) [more info in section `Set up Analytics`]
+- `AnalyticsVerificationToken` - this is token generated via [web-application](https://app.immersiveVRtools.com/#/signup) [more info in section `Set up Analytics`]
 - `ProjectId` - unique ID (used for analytics and PerfSettings prefix) 
 *Use only letters(a-z) and dashes(-)*
 - `VersionId` - current product version (will help determine which users updated your asset to newest version)
