@@ -20,6 +20,8 @@ While you can do that via Unity Forum / your website there's nothing like direct
 
 This tool will give you exactly that while at the same time providing you with easy to use and configure product welcome screen.
 
+> **Before turning analytics on it'd be good idea to add a note on main screen that launch data will be capured. User is anonymous, the only bit of information sent is ID generated and saved in EditorPerfs that'll be used to tie all web-calls together.**
+
 > Analytics and message delivery is accomplished by update-check done by welcome screen on Unity startup. **More on setting up analytics in following sections.**
 
 ## Customisable Product Welcome Screen
